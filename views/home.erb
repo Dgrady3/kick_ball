@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic HTML Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1>Kickball Homepage!</h1>
+    <ul>
+      <% @team.each do |team| %>
+      <li> <a href="/player/<%=team%>"><%=team %></a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
